@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SgmNearby">
+
+    <LinearLayout
+
+        android:id="@+id/navbar"
+        android:background="@color/colorDominant"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/sgmpoint"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/logosgmfixasi"/>
+        <ImageView
+            android:background="@color/selectedbtn"
+            android:id="@+id/sgmnearby"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/nutrition1"/>
+        <ImageView
+            android:id="@+id/sgmvision"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/nutrivision"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2">
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MapsActivity" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/colorDominant">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/productcontainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:id="@+id/titleproduct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Product"
+                            android:textColor="@color/white"
+                            android:textStyle="bold|italic" />
+
+                        <Spinner
+                            android:id="@+id/product"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_toRightOf="@+id/titleproduct"
+                            android:background="@color/white"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            app:srcCompat="@android:drawable/arrow_down_float" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/fromcontainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/productcontainer"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:id="@+id/titlefrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From"
+                            android:textColor="@color/white"
+                            android:textStyle="bold|italic" />
+
+                        <EditText
+                            android:id="@+id/from"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_toRightOf="@+id/titlefrom"
+                            android:background="@color/white"
+                            android:hint="..."
+                            android:maxLength="32"
+                            android:text=""
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/find"
+                            android:layout_width="22dp"
+                            android:layout_height="23dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="11dp"
+                            android:src="@drawable/find" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/nptbcontainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/fromcontainer"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:id="@+id/titlenptb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NPTB"
+                            android:textColor="@color/white"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/nptb"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_toRightOf="@+id/titlenptb"
+                            android:background="@color/white"
+                            android:text="" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

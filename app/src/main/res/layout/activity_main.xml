@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="3">
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/navbar"
+            android:background="@color/colorDominant"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@color/selectedbtn"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/logosgmfixasi"/>
+            <ImageView
+                android:id="@+id/nutrinearby"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/nutrition1"/>
+            <ImageView
+                android:id="@+id/nutrivision"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/nutrivision"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/photowoman" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:textSize="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/border"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:text="Mrs.Theodore" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:padding="1dp"
+                                android:id="@+id/pointuser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="@font/archivo_black"
+                                android:gravity="center"
+                                android:text="250"
+                                android:textColor="@color/colorDominant"
+                                android:textStyle="bold|italic"
+                                tools:fontFamily="sans-serif-smallcaps" />
+
+                            <ImageView
+                                android:id="@+id/imageView7"
+                                android:layout_width="42dp"
+                                android:layout_height="23dp"
+                                android:layout_alignBottom="@+id/textView9"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="84dp"
+                                android:layout_marginEnd="22dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_toStartOf="@+id/textView9"
+                                android:src="@drawable/logosgmfix" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="54dp"
+                                android:layout_height="20dp"
+                                android:layout_alignTop="@+id/imageView7"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginEnd="73dp"
+                                android:layout_marginBottom="9dp"
+                                android:layout_toEndOf="@+id/textView9"
+                                android:text="points" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/colorDominant">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/lihatsemua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="right"
+                    android:text="Lihat semua"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/listproduk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorDominant"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/bgbody"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/kode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/inputmanual" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:textSize="10dp"
+                            android:gravity="center"
+                            android:text="Input Code Manually"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"></View>
+                    <LinearLayout
+                        android:id="@+id/scan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+
+                            android:layout_weight="1"
+                            android:src="@drawable/qrscan" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Scan QR Code"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
